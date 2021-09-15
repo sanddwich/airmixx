@@ -1,0 +1,32 @@
+.Contacts {
+  font: 'Gilroy-Medium';
+  font-size: 18px;
+  color: #303030;
+
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+  }
+
+  &__block1 {
+    border: 2px solid #1e212b;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: flex;
+    align-content: center;
+
+    padding: 130px 100px;
+  }
+  &__form {
+  }
+  &__question {
+  }
+}
