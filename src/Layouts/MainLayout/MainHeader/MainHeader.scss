@@ -1,3 +1,64 @@
 .MainHeader {
-  
+  background-color: #09182f;
+
+  .MainHeader__cont {
+    height: 120px;
+
+    .MainHeader__Row {
+      height: 100%;
+    }
+  }
+
+  .MainHeader__logo {
+    padding-right: 80px;
+
+    @media screen and(max-width: 1200px) {
+      padding-right: 20px;
+    }
+  }
+
+  .MainHeader__nav {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    .MainHeader__navEl {
+      padding-right: 40px;
+
+      @media screen and(max-width: 1200px) {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .MainHeader__phone {
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #ffffff;
+
+    @media screen and(max-width: 576px) {
+      font-size: 18px;
+    }
+  }
+
+  .MainHeader__phoneCallback {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #ffffff;
+    
+    @media screen and(max-width: 576px) {
+      font-size: 12px;
+    }
+  }
 }
