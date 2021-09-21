@@ -15,8 +15,6 @@ class MainHeader extends React.Component<MainHeaderProps, MainHeaderState> {
           className="MainHeader__bg p-0"
           style={{ 
             backgroundImage: `url("/img/mainBg.jpg")`, 
-            backgroundRepeat: 'no-repeat', 
-            // backgroundSize: 'cover',
           }}
         >
           <Container className="MainHeader__cont">

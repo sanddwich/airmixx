@@ -1,8 +1,16 @@
 .MainHeader {
-  background-color: #09182f;
+  background-color: #1E202C;
 
   .MainHeader__bg {
     height: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media screen and(max-width: 1440px) {
+      background-size: cover !important;
+      
+    }
   }
 
   .MainHeader__cont {
