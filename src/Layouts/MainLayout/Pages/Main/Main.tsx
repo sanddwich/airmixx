@@ -1,7 +1,9 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Contacts from '../Components/Contacts/Contacts'
+import Block1 from './Block1/Block1'
 import './Main.scss'
+import Underline from './Underline/Underline'
 
 interface MainProps {}
 
@@ -11,7 +13,10 @@ class Main extends React.Component<MainProps, MainState> {
   render() {
     return (
       <Container fluid className="Main p-0">
-        <Contacts />
+        <Underline />
+        <Block1 />
+
+        {/* <Contacts /> */}
       </Container>
     )
   }

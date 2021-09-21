@@ -1,5 +1,5 @@
 .MainHeader {
-  background-color: #1E202C;
+  background-color: #1e202c;
 
   .MainHeader__bg {
     height: 700px;
@@ -9,7 +9,21 @@
 
     @media screen and(max-width: 1440px) {
       background-size: cover !important;
-      
+    }
+
+    @media screen and(max-width: 1200px) {
+      background-position: -200px;
+    }
+
+    @media screen and(max-width: 992px) {
+      background-position: -500px;
+    }
+
+    @media screen and(max-width: 576px) {
+      background-position: 0px;
+
+      background-size: cover;
+      height: 607px;
     }
   }
 
@@ -29,6 +43,68 @@
     }
   }
 
+  .MainHeader__main {
+    height: 100%;
+    margin-top: -120px;
+
+    .MainHeader__title {
+      font-family: 'Gilroy-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 145%;
+      color: #ffffff;
+
+      @media screen and(max-width: 768px) {
+        font-size: 38px;
+      }
+
+      @media screen and(max-width: 576px) {
+        margin-top: -150px;
+      }
+    }
+
+    .MainHeader__button {
+      border: 2px solid #00b960;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+      width: 325px;
+
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+
+      color: #ffffff;
+      margin-top: 90px;
+      background-color: #1e202c;
+
+      @media screen and(max-width: 992px) {
+        // padding-right: 20px;
+      }
+    }
+  }
+
+  .MainHeader__content {
+    .hvr-sweep-to-right:before {
+      background-color: #00b960 !important;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      opacity: 0.2;
+    }
+
+    .hvr-sweep-to-right {
+      cursor: pointer;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+    }
+  }
+
   .MainHeader__nav {
     font-family: 'Raleway';
     font-style: normal;
@@ -36,12 +112,21 @@
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
+    cursor: pointer;
+
+    .hvr-underline-from-left:before {
+      background: #ffffff;
+      height: 2px;
+    }
 
     .MainHeader__navEl {
-      padding-right: 40px;
+      margin-right: 40px;
+
+      margin-top: 20px;
+      padding-bottom: 20px;
 
       @media screen and(max-width: 1200px) {
-        padding-right: 20px;
+        margin-right: 20px;
       }
     }
   }
@@ -56,7 +141,7 @@
     color: #ffffff;
 
     @media screen and(max-width: 576px) {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 
@@ -68,9 +153,9 @@
     line-height: 16px;
     text-align: right;
     color: #ffffff;
-    
+
     @media screen and(max-width: 576px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }

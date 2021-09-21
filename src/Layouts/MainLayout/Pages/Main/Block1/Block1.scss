@@ -1,0 +1,41 @@
+.Block1 {
+  .Block1__descr {
+    background-color: #00b960;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .Block1__descrCont {
+      width: 550px;
+
+      h4 {
+        font-family: 'Gilroy-SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 145%;
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 145%;
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #ffffff;
+      }
+
+      @media screen and(max-width: 576px) {
+        width: inherit;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
