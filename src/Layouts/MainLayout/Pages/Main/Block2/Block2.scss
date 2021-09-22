@@ -1,0 +1,32 @@
+.Block2 {
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .Block2__imgMob {
+    .Block2__mobTitle {
+      h1 {
+        font-family: 'Gilroy-SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 145%;
+        text-align: center;
+
+        color: #303030;
+      }
+    }
+
+    .Block2__mobRow {
+      padding-top: 50px;
+
+      .Block2__mobCol {
+        width: 300px;
+        height: 535px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
