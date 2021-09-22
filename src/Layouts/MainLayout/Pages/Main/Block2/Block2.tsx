@@ -1,24 +1,11 @@
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import ToggleMessageEl from '../../../../../SharedComponents/ToggleMessageEl/ToggleMessageEl'
 import './Block2.scss'
 
 interface Block2Props {}
 
-interface PopupMessagesInterface {
-  id: number
-  isOpen: boolean
-}
-
 const Block2 = (props: Block2Props) => {
-  const [popupMessages, setPopupMessages] = useState<Array<PopupMessagesInterface>>([
-    {id: 1, isOpen: true},
-    {id: 2, isOpen: false},
-    {id: 3, isOpen: false},
-    {id: 4, isOpen: false},
-    {id: 5, isOpen: false},
-    {id: 6, isOpen: false},
-  ])
-
   return (
     <Container fluid className="Block2">
       <Container className="Block2__img d-none d-sm-block">
@@ -37,7 +24,10 @@ const Block2 = (props: Block2Props) => {
           }}>
             <div className="Block2__qblock d-flex justify-content-center">
               <div className="Block2__qblock1">
-                <img src={`${popupMessages[0].isOpen ? "/img/svg/closeCircle.svg" : "/img/svg/openCircle.svg"}`} alt="" />
+                <ToggleMessageEl isOpen={true}>
+                  <h4>Гипоаллергенный мундштук</h4>
+                  <p>растительный глицерин , никотин 2% , пищевой пропилен-гликоль и натуральные ароматизаторы</p>
+                </ToggleMessageEl>
               </div>
             </div>
           </Col>
