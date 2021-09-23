@@ -1,0 +1,30 @@
+.Block3 {
+  background-color: #09182F;
+
+  padding: 0;
+  padding-top: 130px;
+  padding-bottom: 100px;
+
+  .Block3__Col {
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 80px;
+  }
+
+  .Block3__card1 {
+    .AirmixIconCard__img {
+      margin-top: -70px !important;
+      margin-left: 50px;
+    }
+  }
+  
+  .Block3__card2 {
+    .AirmixIconCard__Row1 {
+      justify-content: end;
+    }
+
+    .AirmixIconCard__img {
+      z-index: 20;
+    }
+  }
+}

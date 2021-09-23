@@ -1,0 +1,35 @@
+.AirmixIconCard {
+  .AirmixIconCard__cardCont {
+    background-color: #ffffff;
+    height: 230px;
+    border-radius: 4px;
+    padding: 20px;
+
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145%;
+    text-align: center;
+    color: #09182f;
+
+    position: relative;
+    z-index: 5;
+  }
+
+  .AirmixIconCard__icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: #09182F 15px solid;
+    border-radius: 50%;
+    
+    z-index: 10;
+  }
+
+  .AirmixIconCard__img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+}
