@@ -1,7 +1,12 @@
 .ToggleMessageEl {
 
+  .ToggleMessageEl__popup {
+    animation-duration: .5s;
+  }
+
   .ToggleMessageEl__action {
     img {
+      width: 45px;
       cursor: pointer;
     }
   }

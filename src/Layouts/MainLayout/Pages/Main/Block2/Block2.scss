@@ -29,8 +29,55 @@
       }
     }
 
-    .Block2__qblock1 {
+    .Block2__qblock {
+      .Block2__qblock1 {
+        .ToggleMessageEl__action {
+          padding-top: 10px !important;
+          padding-left: 100px;
+        }
+      }
+        
+      .Block2__qblock2 {
+        .ToggleMessageEl__action {
+          padding-top: 15px !important;
+          padding-right: 40px;
+        }
+      }
+
+      .Block2__qblock3 {
+        .ToggleMessageEl__action {
+          padding-top: 30px !important;
+          padding-left: 60px;
+        }
+      }
       
+      .Block2__qblock4 {
+        .ToggleMessageEl__action {
+          padding-top: 30px !important;
+          padding-right: 80px;
+        }
+      }
+      
+      .Block2__qblock5 {
+        .ToggleMessageEl__action {
+          padding-top: 30px !important;
+          padding-left: 20px;
+        }
+      }
+      
+      .Block2__qblock6 {
+        .ToggleMessageEl__action {
+          padding-top: 85px !important;
+          padding-left: 20px;
+        }
+      }
+      
+      .Block2__qblock7 {
+        .ToggleMessageEl__action {
+          padding-right: 130px;
+        }
+      }
+
     }
   }
 }
