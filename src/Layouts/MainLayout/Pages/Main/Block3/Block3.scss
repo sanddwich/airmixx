@@ -5,6 +5,10 @@
   padding-top: 130px;
   padding-bottom: 100px;
 
+  @media screen and(max-width: 576px) {
+    padding-top: 30px;
+  }
+
   .Block3__Col {
     height: 100%;
     padding: 10px;
@@ -25,6 +29,32 @@
 
     .AirmixIconCard__img {
       z-index: 20;
+    }
+  }
+
+  .Block3__Slide {
+    padding-top: 160px;
+
+    .AirmixIconCard__img {
+      transform: translate(-10%, -55%);
+    }
+  }
+  
+  .Block3__mobCard2 {
+    .AirmixIconCard__img {
+      transform: translate(-10%, -70%);
+    }
+  }
+  
+  .Block3__mobCard4 {
+    .AirmixIconCard__img {
+      transform: translate(0%, -70%);
+    }
+  }
+
+  .Block3__mobCard5 {
+    .AirmixIconCard__img {
+      transform: translate(-10%, -60%);
     }
   }
 }
