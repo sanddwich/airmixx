@@ -4,6 +4,7 @@ import Contacts from '../Components/Contacts/Contacts'
 import Block1 from './Block1/Block1'
 import Block2 from './Block2/Block2'
 import Block3 from './Block3/Block3'
+import Block4 from './Block4/Block4'
 import './Main.scss'
 import Underline from './Underline/Underline'
 
@@ -19,6 +20,7 @@ class Main extends React.Component<MainProps, MainState> {
         <Block1 />
         <Block2 />
         <Block3 />
+        <Block4 />
 
         {/* <Contacts /> */}
       </Container>

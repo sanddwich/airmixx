@@ -61,7 +61,7 @@ const Block3 = (props: Block3Props) => {
         </Row>
       </Container>
 
-      <Container className="Block3__contaner d-block d-sm-block">
+      <Container className="Block3__contaner d-block d-sm-none">
         <Swiper
           slidesPerView={1}
           loop={true}
@@ -106,6 +106,10 @@ const Block3 = (props: Block3Props) => {
             </div>
           </SwiperSlide>
         </Swiper>
+        <Row className="Block3__sliderNav m-0 justify-content-between pt-4">
+          <div className="Services__prev"><img src="/img/svg/arrowLeft.svg" alt="" /></div>
+          <div className="Services__next"><img src="/img/svg/arrowRight.svg" alt="" /></div>
+        </Row>
       </Container>
     </Container>
   )
