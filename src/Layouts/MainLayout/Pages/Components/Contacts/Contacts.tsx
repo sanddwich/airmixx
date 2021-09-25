@@ -19,6 +19,7 @@ class Contacts extends React.Component<ContactsProps, ContactsState> {
             </div>
             <div className="Contacts__form col-md-6">
               <ButtonComponent>Отправить заявку</ButtonComponent>
+              <p>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</p>
             </div>
           </div>
         </div>
