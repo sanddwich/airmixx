@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import Certificate from '../Components/Certificate/Certificate'
 import Contacts from '../Components/Contacts/Contacts'
 import Block1 from './Block1/Block1'
 import Block2 from './Block2/Block2'
@@ -21,8 +22,8 @@ class Main extends React.Component<MainProps, MainState> {
         <Block2 />
         <Block3 />
         <Block4 />
-
-        {/* <Contacts /> */}
+        <Certificate />
+        <Contacts />
       </Container>
     )
   }
