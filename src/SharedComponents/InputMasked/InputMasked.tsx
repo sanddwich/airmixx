@@ -6,7 +6,7 @@ import './InputMasked.scss'
 interface InputMaskedProps {
   name: string
   type: 'email' | 'number' | 'password' | 'text' | 'price'
-  value: number
+  value: string
   controlChangeHandler: (name: string, value: string) => void
 }
 
@@ -28,7 +28,7 @@ const InputMasked = (props: InputMaskedProps) => {
       alwaysShowMask: false,
       formatChars: {
         '9': '[0-9]',
-        'a': '[A-Za-z]',
+        a: '[A-Za-z]',
         '*': '[A-Za-z0-9]',
       },
       permanents: [2, 5],
@@ -36,8 +36,8 @@ const InputMasked = (props: InputMaskedProps) => {
   ])
 
   const getMask = (): string => {
-    const maskVariant = inputMaskVariants.find(maskVariant => maskVariant.type = props.type)?.mask
-    if(maskVariant) {
+    const maskVariant = inputMaskVariants.find((maskVariant) => (maskVariant.type = props.type))?.mask
+    if (maskVariant) {
       return maskVariant
     } else {
       return '*'

@@ -1,32 +1,28 @@
 import './App.scss'
-import { Container } from 'react-bootstrap'
+import { Container, ModalDialog } from 'react-bootstrap'
 import { Route, Switch } from 'react-router-dom'
 import AdminLayout from './Layouts/AdminLayout/AdminLayout'
 import MainLayout from './Layouts/MainLayout/MainLayout'
 import { connect } from 'react-redux'
 import { RootState } from './Redux'
+import { setModalWindow } from './Redux/actions/modal'
 import { ModalState, ToastState } from './Redux/interfaces/interfaces'
 import ToastComponent from './SharedComponents/ToastComponent/ToastComponent'
 import MobileMenu from './SharedComponents/MobileMenu/MobileMenu'
+import ModalWindow from './SharedComponents/ModalWindow/ModalWindow'
 
 interface AppProps {
   toast: ToastState
   modal: ModalState
+  setModalWindow: any
 }
 
 const App = (props: AppProps) => {
-  // const [param, setParam] = useState(0)
-
-  // const foo = ():void => {
-  //   console.log('FOO')
-  //   setParam(param + 1)
-  //   console.log(param)
-  // }
-
   return (
     <Container fluid className="App p-0">
       {props.modal.mobileMenu.isActive && <MobileMenu />}
       {props.toast.isActive && <ToastComponent />}
+      {props.modal.modalWindow && <ModalWindow closeHandler={props.setModalWindow(false)} />}
 
       <Switch>
         <Route path="/admin" component={AdminLayout} />
@@ -36,7 +32,9 @@ const App = (props: AppProps) => {
   )
 }
 
-const mapDispatchToProps = {}
+const mapDispatchToProps = {
+  setModalWindow,
+}
 
 const mapStateToProps = (state: RootState) => {
   const toast = state.toast

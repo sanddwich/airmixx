@@ -4,8 +4,9 @@ import './InputString.scss'
 
 interface InputStringProps {
   type?: 'text' | 'number' | 'password'
-  title: string
+  title?: string
   value: string
+  placeholder?: string
   controlChangeHandler: (value: string) => void
 }
 
@@ -19,10 +20,10 @@ const InputString = (props: InputStringProps) => {
 
   return (
     <Container fluid className="InputString">
-      <Form.Label>{props.title}</Form.Label>
       <Form.Control
         type={props.type ? props.type : 'text'}
         value={curValue}
+        placeholder={props.placeholder}
         onChange={(event) => {
           changeHandler(event.target.value)
         }}
