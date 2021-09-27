@@ -25,7 +25,7 @@ const App = (props: AppProps) => {
       {props.modal.modalWindow && <ModalWindow closeHandler={props.setModalWindow(false)} />}
 
       <Switch>
-        <Route path="/admin" component={AdminLayout} />
+        {/* <Route path="/admin" component={AdminLayout} /> */}
         <Route path="/" component={MainLayout} />
       </Switch>
     </Container>

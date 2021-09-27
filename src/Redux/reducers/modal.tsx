@@ -9,13 +9,13 @@ import { ModalActionType } from '../interfaces/modal'
 
 const initialState: ModalState = {
   modalRequestForm: {
-    isActive: true,
+    isActive: false,
   },
   mobileMenu: {
     isActive: false,
   },
   modalWindow: {
-    isActive: true,
+    isActive: false,
   },
 }
 
