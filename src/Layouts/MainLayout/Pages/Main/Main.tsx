@@ -22,8 +22,8 @@ class Main extends React.Component<MainProps, MainState> {
         <Block2 />
         <Block3 />
         <Block4 />
-        <Certificate />
-        <Contacts />
+        {/* <Certificate /> */}
+        {/* <Contacts /> */}
       </Container>
     )
   }

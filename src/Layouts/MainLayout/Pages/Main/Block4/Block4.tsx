@@ -37,10 +37,13 @@ const Block4 = (props: Block4Props) => {
             </div>
             <Row className="Block4__buttons m-0">
               <AirmixSticker width={480}>Чтобы получить дилерскую эксклюзивную цену, свяжитесь с нами</AirmixSticker>
+            </Row>            
+            <Row className="Block4__buttons m-0">
+              <div className="Block4__button">Связаться с нами</div>
             </Row>
           </Col>
           <Col lg={6} className="Block4__ColImg">
-            {/* <img src="/img/4-1.jpg" alt="" /> */}
+            <img className="d-flex d-xl-none img-fluid" src="/img/4-1.jpg" alt="" />
           </Col>
         </Row>
       </Container>

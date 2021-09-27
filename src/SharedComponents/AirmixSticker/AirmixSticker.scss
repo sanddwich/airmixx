@@ -17,4 +17,10 @@
   margin-bottom: 20px;
 
   color: #383838;
+  
+  @media screen and(max-width: 576px) {
+    width: 100% !important;
+    height: auto;
+    margin-right: 0;
+  }
 }

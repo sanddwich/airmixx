@@ -15,6 +15,10 @@
 
     color: #303030;
     padding-bottom: 50px;
+
+    @media screen and(max-width: 576px) {
+      font-size: 26px;
+    }
   }
 
   .Block4__titleText {
@@ -24,6 +28,10 @@
     font-size: 30px;
     line-height: 145%;
     color: #303030;
+
+    @media screen and(max-width: 576px) {
+      font-size: 18px;
+    }
   }
 
   .Block4__titleDiv {
@@ -42,6 +50,11 @@
     img {
       margin-left: -150px;
       margin-top: -50px;
+
+      @media screen and(max-width: 1200px) {
+        margin-left: 0;
+        margin-top: 0;
+      }
     }
   }
 
@@ -55,5 +68,34 @@
     background-repeat: no-repeat;
     background-position: right bottom;
     background-position-y: 50px;
+
+    @media screen and(max-width: 1200px) {
+      background-image: none !important;
+    }
+  }
+
+  .Block4__button {
+    background: #00b960;
+    border-radius: 4px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-top: -30px;
+
+    @media screen and(max-width: 576px) {
+      width: 100%;
+    }
   }
 }
