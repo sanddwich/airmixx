@@ -21,8 +21,8 @@ const App = (props: AppProps) => {
   return (
     <Container fluid className="App p-0">
       {/* {props.modal.mobileMenu.isActive && <MobileMenu />}
-      {props.toast.isActive && <ToastComponent />}
-      {props.modal.modalWindow && <ModalWindow closeHandler={props.setModalWindow(false)} />} */}
+      {props.toast.isActive && <ToastComponent />} */}
+      {/* {props.modal.modalWindow && <ModalWindow closeHandler={props.setModalWindow(false)} />} */}
 
       <Switch>
         {/* <Route path="/admin" component={AdminLayout} /> */}
