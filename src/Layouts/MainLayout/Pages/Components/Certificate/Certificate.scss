@@ -4,7 +4,9 @@
   color: #303030;
   width: 100%;
   background-color: #09182f;
-  padding: 100px;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +19,11 @@
     font-weight: 600;
     font-size: 60px;
     line-height: 145%;
+
+    @media screen and(max-width: 992px) {
+      font-size: 42px;
+      line-height: 130%;
+    }
   }
   p {
     text-align: center;
@@ -28,5 +35,9 @@
   }
   &__images {
     margin-top: 100px;
+  }
+
+  .Certificate__images2 {
+    padding-top: 50px;
   }
 }

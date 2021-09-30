@@ -4,6 +4,7 @@ import './ButtonComponent.scss'
 
 interface ButtonComponentProps {
   children?: React.ReactNode
+  onClickHandler?: () => void
 }
 
 const ButtonComponent = (props: ButtonComponentProps) => {

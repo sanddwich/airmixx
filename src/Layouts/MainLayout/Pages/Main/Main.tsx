@@ -23,7 +23,7 @@ class Main extends React.Component<MainProps, MainState> {
         <Block3 />
         <Block4 />
         <Certificate />
-        {/* <Contacts /> */}
+        <Contacts />
       </Container>
     )
   }

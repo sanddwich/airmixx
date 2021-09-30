@@ -4,10 +4,72 @@
   font-size: 18px;
   color: #303030;
 
+  @media screen and(max-width: 576px) {
+    margin-top: 0;
+  }
+
+  .Contacts__button {
+    padding-top: 10px;
+  }
+
+  .Contact__buttonEl {
+    cursor: pointer;
+    margin-top: 0px !important;
+    background: #00b960;
+    border-radius: 4px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-top: -30px;
+
+    @media screen and(max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  .Contacts__input {
+    padding-bottom: 20px;
+    input {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      background: #ffffff;
+      border: 1px solid #bdbdbd;
+      box-sizing: border-box;
+      border-radius: 4px;
+
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+
+      color: #696969;
+    }
+  }
+
   h1 {
     font-size: 38px;
     font-weight: 600;
     line-height: 145%;
+    @media screen and(max-width: 992px) {
+      font-size: 32px;
+      line-height: 130%;
+    }
   }
   p {
     font-family: 'Raleway';
@@ -15,6 +77,18 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 145%;
+  }
+
+  .Contacts__question {
+    @media screen and(max-width: 768px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .Contacts__cont {
+    @media screen and(max-width: 576px) {
+      padding: 0;
+    }
   }
 
   &__block1 {
@@ -25,10 +99,65 @@
     display: flex;
     align-content: center;
 
-    padding: 130px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media screen and(max-width: 992px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media screen and(max-width: 768px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @media screen and(max-width: 576px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
+
+  .Container2 {
+    padding-top: 100px;
+  }
+
   &__form {
   }
   &__question {
+  }
+
+  .Contacts__El {
+    padding-bottom: 20px;
+    a {
+      font-family: 'Gilroy-SemiBold';
+      font-style: normal;
+      font-weight: normal;
+      line-height: 145%;
+
+      color: #484848;
+    }
+    
+    @media screen and(max-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .contactsHeader {
+    @media screen and(max-width: 768px) {
+      text-align: center;
+      font-size: 26px;
+    }
+  }
+
+  .phone {
+    font-size: 30px;
+  }
+
+  .mail {
+    font-size: 24px;
   }
 }
