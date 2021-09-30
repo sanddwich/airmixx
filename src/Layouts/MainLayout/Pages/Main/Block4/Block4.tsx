@@ -2,8 +2,12 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import AirmixSticker from '../../../../../SharedComponents/AirmixSticker/AirmixSticker'
 import './Block4.scss'
+import {showRequestModal} from '../../../../../Redux/actions/modal'
+import { connect } from 'react-redux'
 
-interface Block4Props {}
+interface Block4Props {
+  showRequestModal: () => void
+}
 
 const Block4 = (props: Block4Props) => {
   return (
@@ -39,7 +43,7 @@ const Block4 = (props: Block4Props) => {
               <AirmixSticker width={480}>Чтобы получить дилерскую эксклюзивную цену, свяжитесь с нами</AirmixSticker>
             </Row>            
             <Row className="Block4__buttons m-0">
-              <div className="Block4__button">Связаться с нами</div>
+              <div className="Block4__button" onClick={() => props.showRequestModal()}>Связаться с нами</div>
             </Row>
           </Col>
           <Col lg={6} className="Block4__ColImg">
@@ -51,4 +55,9 @@ const Block4 = (props: Block4Props) => {
   )
 }
 
-export default Block4
+
+const mapDispatchToProps = {
+  showRequestModal,
+}
+
+export default connect(null, mapDispatchToProps)(Block4)

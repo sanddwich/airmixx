@@ -22,7 +22,7 @@ const Block3 = (props: Block3Props) => {
   return (
     <Container fluid className="Block3">
       <Container className="Block3__contaner d-none d-sm-block">
-        <Row className="Block3__Row m-0 ">
+        <Row className="Block3__Row m-0">
           <Col lg={6} className="Block3__Col">
             <div className="Block3__card1">
               <AirmixIconCard img="/img/3-1.png" icon="/img/svg/3-1.svg">

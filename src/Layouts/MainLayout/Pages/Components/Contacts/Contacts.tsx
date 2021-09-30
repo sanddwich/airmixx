@@ -72,7 +72,7 @@ const Contacts = (props: ContactsProps) => {
               </Row>
               <Row className="Contacts__button m-0">
                 <div className="Contact__buttonEl" onClick={handleSubmit((data) => onClickHandler(data))}>
-                  Связаться с нами
+                  Отправить заявку
                 </div>
               </Row>
               <p className="pt-3">Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</p>
@@ -88,9 +88,15 @@ const Contacts = (props: ContactsProps) => {
           </Col>
         </Row>
         <Row className="Contacts__Row pt-5 m-0 justify-content-between align-items-center">
-          <div className="Contacts__El phone"><a href="tel:89299250008">+7 (929) 925-00-08</a></div>
-          <div className="Contacts__El phone"><a href="tel:89608586777">+7 (960) 858-67-77</a></div>
-          <div className="Contacts__El mail"><a href="mailto:airmix_pods@mail.ru">airmix_pods@mail.ru</a></div>
+          <div className="Contacts__El phone">
+            <a href="tel:89299250008">+7 (929) 925-00-08</a>
+          </div>
+          <div className="Contacts__El phone">
+            <a href="tel:89608586777">+7 (960) 858-67-77</a>
+          </div>
+          <div className="Contacts__El mail">
+            <a href="mailto:airmix_pods@mail.ru">airmix_pods@mail.ru</a>
+          </div>
           <div className="Contacts__El">
             <img src="/icons/wa.svg" alt="" />
             <img className="pl-5 pr-5" src="/icons/tg.svg" alt="" />
