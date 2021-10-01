@@ -10,7 +10,7 @@ interface AirmixStickerProps {
 const AirmixSticker = (props: AirmixStickerProps) => {
   return (
     <div
-      className="AirmixSticker d-flex justify-content-center align-items-center"
+      className="AirmixSticker hvr-grow-shadow d-flex justify-content-center align-items-center"
       style={{ width: props.width ? props.width : 'inherit' }}
     >
       {props.children}

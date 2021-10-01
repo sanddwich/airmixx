@@ -1,21 +1,31 @@
 import ProductCardInterface from '../Redux/interfaces/AdditionalInterfaces/ProductCardInterface'
-import ProductOperation from '../Redux/interfaces/AdditionalInterfaces/ProductOperation'
-import UploadFiles from '../Redux/interfaces/AdditionalInterfaces/UploadFiles'
+
+interface SocialLink {
+  name: string
+  url: string
+}
+
+interface MailSettings {
+  apiPath: string
+  senderMail: string
+  senderMailPass?: string
+  senderMailServer: string
+  senderMailInfo: string
+  recipientMail: string
+  userName: string
+  userPhone: string
+}
 
 interface ConfigInterface {
   url: string
   productCards: ProductCardInterface[]
-  backConnectData: {
-    backendURL: string
-  }
-  upload: UploadFiles
-  productOperations: ProductOperation[]
-  messageTimout: number
-  uploadFilesCount: number
+  socialLinks: SocialLink[]
+  mailSettings: MailSettings
 }
 
 export const Config: ConfigInterface = {
-  url: 'http://localhost:3000/',
+  // url: 'http://localhost:3000/',
+  url: 'https://airmixx.ru/',
 
   productCards: [
     {title: 'Ледяной арбуз', img: '/img/1-1.png'},
@@ -30,26 +40,20 @@ export const Config: ConfigInterface = {
     {title: 'Имперский табак', img: '/img/1-10.png'},
   ],
 
-  backConnectData: {
-    backendURL: 'http://laravel:8000',
-  },
-  productOperations: [
-    { httpMethod: 'POST', productMethod: 'CHANGE_PRODUCT', apiLink: '/api/admin/product/create-update' },
+  socialLinks: [
+    {name: 'whatsapp', url: 'https://api.whatsapp.com/send?phone=+79608586777'},
+    {name: 'telegram', url: 'https://t.me/+79299250008'},
+    {name: 'insta', url: 'https://www.instagram.com/airmix_pods/'},
   ],
-  messageTimout: 5000,
-  uploadFilesCount: 10,
-  upload: {
-    images: {
-      accept: '.jpg, .jpeg, .png',
-      maxSize: 1024000,
-    },
-    pdf: {
-      accept: '.pdf',
-      maxSize: 1024000,
-    },
-    archives: {
-      accept: '.rar, .7zip',
-      maxSize: 1024000,
-    },
+
+  mailSettings: {
+    apiPath: '/api/index.php',
+    senderMail: 'info@airmixx.ru',
+    senderMailInfo: 'AIRMIXX Info',
+    senderMailServer: 'ssl://mail.hostland.ru',
+    userName: '',
+    userPhone: '',
+    // recipientMail: 'bck-dkiselev@yandex.ru',
+    recipientMail: 'airmix_pods@mail.ru',
   },
 }

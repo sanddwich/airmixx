@@ -79,5 +79,35 @@
     text-align: center;
 
     color: #ffffff;
+
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+      background: #019950;
+    }
+  }
+
+  @media screen and(max-width: 465px) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .AirmixSuccess__content {
+      padding-left: 20px;
+      padding-right: 20px;
+
+
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      h6 {
+        padding-top: 20px;
+        font-size: 13px;
+      }
+    }
   }
 }

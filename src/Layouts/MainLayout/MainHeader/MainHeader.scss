@@ -132,13 +132,23 @@
   }
 
   .MainHeader__phone {
-    font-family: 'Gilroy-SemiBold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: right;
-    color: #ffffff;
+    a {
+      font-family: 'Gilroy-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: right;
+      color: #ffffff;
+      cursor: pointer;
+
+      text-decoration: none;
+
+      transition: all ease-in-out 0.5s;
+      &:hover {
+        color: #00b960;
+      }
+    }
 
     @media screen and(max-width: 576px) {
       font-size: 19px;
@@ -153,6 +163,13 @@
     line-height: 16px;
     text-align: right;
     color: #ffffff;
+    padding-top: 10px;
+    cursor: pointer;
+
+    transition: all ease-in-out 0.5s;
+    &:hover {
+      color: #00b960;
+    }
 
     @media screen and(max-width: 576px) {
       font-size: 14px;

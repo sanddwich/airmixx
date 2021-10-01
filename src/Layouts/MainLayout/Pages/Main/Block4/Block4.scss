@@ -100,6 +100,11 @@
 
     margin-top: -30px;
 
+    transition: all ease-in-out .5s;
+    &:hover {
+      background: #019950;
+    }
+
     @media screen and(max-width: 576px) {
       width: 100%;
     }

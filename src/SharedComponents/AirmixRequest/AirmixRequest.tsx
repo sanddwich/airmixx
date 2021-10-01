@@ -5,13 +5,19 @@ import ReactInputMask from 'react-input-mask'
 import { connect } from 'react-redux'
 import FormDataIface from '../../Redux/interfaces/AdditionalInterfaces/FormDataIface'
 import './AirmixRequest.scss'
-import {hideRequestModal} from '../../Redux/actions/modal'
+import { hideRequestModal, setModalWindow } from '../../Redux/actions/modal'
+import axios from 'axios'
+import { Config } from '../../Config/Config'
+import LoaderHorizontal from '../LoaderHorizontal/LoaderHorizontal'
 
 interface AirmixRequestProps {
   hideRequestModal: () => void
+  setModalWindow: (isActive: boolean) => void
 }
 
 const AirmixRequest = (props: AirmixRequestProps) => {
+  const [loading, setLoading] = useState<boolean>(false)
+
   useEffect(() => {
     bodyBlock()
   }, [])
@@ -43,8 +49,27 @@ const AirmixRequest = (props: AirmixRequestProps) => {
     phoneString.length < phoneLength ? setPhoneError(true) : sendFormData(data)
   }
 
-  const sendFormData = (data: FormDataIface): void => {
-    console.log(data)
+  const sendFormData = async (data: FormDataIface): Promise<any> => {
+    setLoading(true)
+    const mailSettings = { ...Config.mailSettings, userName: data.name, userPhone: data.phone, siteUrl: Config.url }
+    axios
+      .post(mailSettings.apiPath, mailSettings)
+      .then((res) => {
+        if (res.status === 200) {
+          console.log(res.data)
+          props.hideRequestModal()
+          props.setModalWindow(true)
+        } else {
+          console.log('Ошибка отправки сообщения')
+        }
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+      .finally(() => setLoading(false))
+
+    // props.setModalForm(false)
+    // props.setModalThanks(true)
   }
 
   return (
@@ -52,7 +77,7 @@ const AirmixRequest = (props: AirmixRequestProps) => {
       <div className="AirmixRequest__window animated animate__fadeInUpBig">
         <Row className="AirmixRequest__closeRow m-0 d-flex justify-content-end">
           <div className="AirmixRequest__closeCont">
-            <img src="/icons/exit.svg" alt="" onClick={() => closeButtonHandler()}/>
+            <img src="/icons/exit.svg" alt="" onClick={() => closeButtonHandler()} />
           </div>
         </Row>
         <Row className="AirmixRequest__content m-0 justify-content-center align-items-center">
@@ -92,9 +117,13 @@ const AirmixRequest = (props: AirmixRequestProps) => {
               </Col>
             </Row>
             <Row className="Contacts__button m-0">
-              <div className="Contact__buttonEl" onClick={handleSubmit((data) => onClickHandler(data))}>
-                Отправить
-              </div>
+              {loading ? (
+                <LoaderHorizontal />
+              ) : (
+                <div className="Contact__buttonEl" onClick={handleSubmit((data) => onClickHandler(data))}>
+                  Отправить
+                </div>
+              )}
             </Row>
           </div>
 
@@ -107,6 +136,7 @@ const AirmixRequest = (props: AirmixRequestProps) => {
 
 const mapDispatchToProps = {
   hideRequestModal,
+  setModalWindow,
 }
 
 export default connect(null, mapDispatchToProps)(AirmixRequest)

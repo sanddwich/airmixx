@@ -4,7 +4,7 @@
   padding: 0;
   padding-top: 130px;
   padding-bottom: 100px;
-  overflow: hidden;
+  // overflow-x: hidden;
 
   @media screen and(max-width: 576px) {
     padding-top: 30px;
@@ -30,6 +30,8 @@
 
     .AirmixIconCard__img {
       z-index: 20;
+      margin-left: -44px;
+      
     }
   }
 

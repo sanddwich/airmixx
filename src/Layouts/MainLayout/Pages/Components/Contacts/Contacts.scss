@@ -34,6 +34,11 @@
 
     margin-top: -30px;
 
+    transition: all ease-in-out 0.5s;
+    &:hover {
+      background: #019950;
+    }
+
     @media screen and(max-width: 576px) {
       width: 100%;
     }
@@ -128,8 +133,23 @@
   &__question {
   }
 
+  .LoaderHorizontal {
+    .lds-ellipsis div {
+      background-color: #00b960;
+    }
+  }
+
   .Contacts__El {
     padding-bottom: 20px;
+    cursor: pointer;
+
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
     a {
       font-family: 'Gilroy-SemiBold';
       font-style: normal;
@@ -138,7 +158,7 @@
 
       color: #484848;
     }
-    
+
     @media screen and(max-width: 768px) {
       width: 100%;
       display: flex;
