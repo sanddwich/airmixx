@@ -56,7 +56,13 @@ const MainHeader = (props: MainHeaderProps) => {
                     Оптовикам
                   </div>
                 </ScrollAnimation>
+                
                 <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeIn" delay={1200}>
+                  <div className="MainHeader__navEl hvr-underline-from-left" onClick={() => scrollTo('Certificate', 0)}>
+                    Сертификаты
+                  </div>
+                </ScrollAnimation>
+                <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeIn" delay={1300}>
                   <div className="MainHeader__navEl hvr-underline-from-left" onClick={() => scrollTo('Block1', 0)}>
                     Каталог
                   </div>
@@ -64,7 +70,7 @@ const MainHeader = (props: MainHeaderProps) => {
               </div>
             </div>
             <div className="MainHeader__phone d-block">
-              <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeIn" delay={1300}>
+              <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeIn" delay={1400}>
                 <div className="MainHeader__phone">
                   <a href="tel:89299250008">+7 (929) 925-00-08</a>
                 </div>

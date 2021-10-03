@@ -57,16 +57,16 @@ const Contacts = (props: ContactsProps) => {
 
   return (
     <Element name="Contacts">
-      <Container fluid className="Contacts p-0">
+      <Container fluid className="Contacts">
         <ScrollAnimation animateOnce={true} offset={200} animateIn="animate__fadeInUp">
           <Container className="Contacts__cont">
             <div className="Contacts__block1">
               <div className="row">
-                <div className="Contacts__question col-md-6">
+                <Col md={8} xs={12} className="Contacts__question">
                   <h1>Готовы оформить заказ или остались вопросы?</h1>
                   <p>Оставьте заявку. Мы свяжемся с вами и ответим на все возникшие вопросы</p>
-                </div>
-                <div className="Contacts__form col-md-6">
+                </Col>
+                <Col md={4} xs={12} className="Contacts__form p-0">
                   <Row className="Contacts__input m-0">
                     <Col className="Contacts__inputCol p-0">
                       <input
@@ -107,8 +107,13 @@ const Contacts = (props: ContactsProps) => {
                       </div>
                     )}
                   </Row>
-                  <p className="pt-3">Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</p>
-                </div>
+                  <p className="pt-3">
+                    Оставляя заявку, вы соглашаетесь с{' '}
+                    <a href={`${Config.url}/polotic.pdf`} target="_blank">
+                      политикой конфиденциальности
+                    </a>
+                  </p>
+                </Col>
               </div>
             </div>
           </Container>

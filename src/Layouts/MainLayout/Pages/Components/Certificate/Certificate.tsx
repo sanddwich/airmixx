@@ -12,20 +12,22 @@ class Certificate extends React.Component<CertificateProps, CertificateState> {
   render() {
     return (
       <Element name="Certificate">
-        <Container fluid className="Certificate d-none d-sm-block">
+        <Container fluid className="Certificate d-block">
           <Container className="Certificate__cont">
             <h1>Сертифицированный продукт</h1>
-            <div>
-              <p>
-                Наш продукт прошел все необходимые лабораторные исследования и отвечает международным стандартам
-                качества.
-              </p>
-              <p>
-                У нас имеются сертификаты мирового уровня как на готовое изделие, так и на отдельные его комплектующие:
-                на металлический корпус, ароматизационную жидкость, аккумуляторные батареи, фильтр.
-              </p>
-              <p>Поэтому в качестве нашего продукта вы можете быть полностью уверены!</p>
-            </div>
+            <Row className="Certificate__rectRow">
+              <div className="Certificate__rect">
+                <p>
+                  Наш продукт прошел все необходимые лабораторные исследования и отвечает международным стандартам
+                  качества.
+                </p>
+                <p>
+                  У нас имеются сертификаты мирового уровня как на готовое изделие, так и на отдельные его
+                  комплектующие: на металлический корпус, ароматизационную жидкость, аккумуляторные батареи, фильтр.
+                </p>
+                <p>Поэтому в качестве нашего продукта вы можете быть полностью уверены!</p>
+              </div>
+            </Row>
 
             <div className="Certificate__images d-none d-xl-flex justify-content-center align-items-center">
               <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeInUp" delay={100}>

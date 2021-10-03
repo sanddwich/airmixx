@@ -127,7 +127,12 @@ const AirmixRequest = (props: AirmixRequestProps) => {
             </Row>
           </div>
 
-          <h6>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</h6>
+          <h6>
+            Оставляя заявку, вы соглашаетесь{' '}
+            <a href={`${Config.url}/polotic.pdf`} target="_blank">
+              политикой конфиденциальности
+            </a>
+          </h6>
         </Row>
       </div>
     </div>

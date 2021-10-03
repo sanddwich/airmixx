@@ -12,6 +12,30 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @media screen and(max-width: 576px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .Certificate__rectRow {
+    margin: 0;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 30px;
+
+    .Certificate__rect {
+      border: 1px solid #00b960;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 20px;
+    }
+
+    @media screen and(max-width: 992px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   h1 {
     color: #ffffff;
     font-family: 'Gilroy';
@@ -24,6 +48,11 @@
       font-size: 42px;
       line-height: 130%;
     }
+
+    @media screen and(max-width: 576px) {
+      font-size: 26px;
+      line-height: 130%;
+    }
   }
   p {
     text-align: center;
@@ -32,6 +61,7 @@
     font-weight: normal;
     font-size: 14px;
     color: #ffffff;
+
   }
   &__images {
     margin-top: 100px;

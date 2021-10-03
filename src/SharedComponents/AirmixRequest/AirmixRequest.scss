@@ -127,6 +127,14 @@
     }
   }
 
+  a {
+    color: #bababa;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   @media screen and(max-width: 465px) {
     padding-left: 20px;
     padding-right: 20px;
