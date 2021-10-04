@@ -34,7 +34,7 @@ const Block2 = (props: Block2Props) => {
                 <div className="Block2__qblock1">
                   <ToggleMessageEl isOpen={true}>
                     <h4>Гипоаллергенный мундштук</h4>
-                    <p>растительный глицерин , никотин 2% , пищевой пропилен-гликоль и натуральные ароматизаторы</p>
+                    <p>растительный глицерин , никотин 2% , пищевой пропиленгликоль и натуральные ароматизаторы</p>
                   </ToggleMessageEl>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const Block2 = (props: Block2Props) => {
                   <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeIn" delay={300}>
                     <ToggleMessageEl isOpen={false}>
                       <h4>Фильтр</h4>
-                      <p>Блокирует попадание жидкости в пололость рта</p>
+                      <p>Блокирует попадание жидкости в полость рта</p>
                     </ToggleMessageEl>
                   </ScrollAnimation>
                 </div>

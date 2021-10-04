@@ -25,7 +25,7 @@ const Block1 = (props: Block1Props) => {
           <Row className="Block1__descr m-0 justify-content-center">
             <div className="Block1__descrCont">
               <h4>Состав:</h4>
-              <p>растительный глицерин , никотин 2% , пищевой пропилен-гликоль и натуральные ароматизаторы</p>
+              <p>растительный глицерин , никотин 2% , пищевой пропиленгликоль и натуральные ароматизаторы</p>
             </div>
           </Row>
         </ScrollAnimation>

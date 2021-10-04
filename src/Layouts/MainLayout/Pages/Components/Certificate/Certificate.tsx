@@ -23,7 +23,7 @@ class Certificate extends React.Component<CertificateProps, CertificateState> {
                 </p>
                 <p>
                   У нас имеются сертификаты мирового уровня как на готовое изделие, так и на отдельные его
-                  комплектующие: на металлический корпус, ароматизационную жидкость, аккумуляторные батареи, фильтр.
+                  комплектующие: на металлический корпус, ароматизированную жидкость, аккумуляторные батареи, фильтр.
                 </p>
                 <p>Поэтому в качестве нашего продукта вы можете быть полностью уверены!</p>
               </div>
@@ -59,8 +59,9 @@ class Certificate extends React.Component<CertificateProps, CertificateState> {
               </ScrollAnimation>
             </div>
 
-            <Row className="Certificate__images2 m-0 d-flex d-xl-none">
-              <img className="img-fluid" src="/img/cert-1.png" alt="" />
+            <Row className="Certificate__images2 m-0 d-flex d-xl-none justify-content-center">
+              <img className="img-fluid d-none d-sm-block d-xl-none" src="/img/cert-1.png" alt="" />
+              <img className="Certificate__imgMobile d-block d-sm-none" src="/img/certMobile.png" alt="" />
             </Row>
           </Container>
         </Container>

@@ -121,7 +121,7 @@ const Contacts = (props: ContactsProps) => {
 
         <Container className="Contacts__cont Container2">
           <Row className="Contacts__Row m-0">
-            <Col xl={6} className="Contacts__Col p-0">
+            <Col xl={7} className="Contacts__Col p-0">
               <h1 className="contactsHeader">Или свяжитесь с нами самостоятельно</h1>
             </Col>
           </Row>
