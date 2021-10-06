@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { RootState } from '../../../../Redux'
 import { ModalState } from '../../../../Redux/interfaces/interfaces'
+import AirmixModalEighteen from '../../../../SharedComponents/AirmixModalEighteen/AirmixModalEighteen'
 import AirmixRequest from '../../../../SharedComponents/AirmixRequest/AirmixRequest'
 import AirmixSuccess from '../../../../SharedComponents/AirmixSuccess/AirmixSuccess'
 import Certificate from '../Components/Certificate/Certificate'
@@ -19,21 +20,22 @@ interface MainProps {
 }
 
 const Main = (props: MainProps) => {
-    return (
-      <Container fluid className="Main p-0">
+  return (
+    <Container fluid className="Main p-0">
 
-        {props.modal.modalRequestForm.isActive && <AirmixRequest />}
-        {props.modal.modalWindow.isActive && <AirmixSuccess />}
+      {props.modal.modalEighteen.isActive && <AirmixModalEighteen />}
+      {props.modal.modalRequestForm.isActive && <AirmixRequest />}
+      {props.modal.modalWindow.isActive && <AirmixSuccess />}
 
-        <Underline />
-        <Block1 />
-        <Block2 />
-        <Block3 />
-        <Block4 />
-        <Certificate />
-        <Contacts />
-      </Container>
-    )
+      <Underline />
+      <Block1 />
+      <Block2 />
+      <Block3 />
+      <Block4 />
+      <Certificate />
+      <Contacts />
+    </Container>
+  )
 }
 
 const mapDispatchToProps = {}

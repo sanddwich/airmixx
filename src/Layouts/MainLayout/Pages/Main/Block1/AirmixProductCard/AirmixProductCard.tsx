@@ -18,9 +18,17 @@ export default function AirmixProductCard(props: AirmixProductCardProps) {
         }}
       ></Container>
 
-      <Container fluid className="AirmixProductCard__imgMob  d-flex justify-content-center d-xl-none p-0">
+      <Container fluid className="AirmixProductCard__imgMob d-none d-sm-flex d-xl-none justify-content-center p-0">
         <img className="img-fluid" src={`${props.img}`} alt={`${props.title}`} />
       </Container>
+
+      <Container
+        fluid
+        className="AirmixProductCard__imgIphone d-block d-sm-none p-0"
+        style={{
+          backgroundImage: `url("${props.img}")`,
+        }}
+      ></Container>
     </Container>
   )
 }

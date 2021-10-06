@@ -1,6 +1,7 @@
 import {
   HIDE_REQUESTFORM_MODAL,
   SET_MOBILE_MENU,
+  SET_MODAL_EIGHTEEN,
   SET_MODAL_WINDOW,
   SHOW_REQUESTFORM_MODAL,
 } from '../constants/ActionTypes'
@@ -17,6 +18,9 @@ const initialState: ModalState = {
   modalWindow: {
     isActive: false,
   },
+  modalEighteen: {
+    isActive: true,
+  }
 }
 
 const modal = (state: ModalState = initialState, action: ModalActionType) => {
@@ -49,11 +53,17 @@ const modal = (state: ModalState = initialState, action: ModalActionType) => {
           isActive: action.isActive,
         },
       }
-
     case SET_MODAL_WINDOW:
       return {
         ...state,
         modalWindow: {
+          isActive: action.isActive,
+        },
+      }      
+    case SET_MODAL_EIGHTEEN:
+      return {
+        ...state,
+        modalEighteen: {
           isActive: action.isActive,
         },
       }

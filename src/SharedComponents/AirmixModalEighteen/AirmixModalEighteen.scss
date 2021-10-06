@@ -1,0 +1,156 @@
+.AirmixModalEighteen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(72, 72, 72, 0.8);
+
+  .AirmixModalEighteen__buttons {
+    margin-top: -40px !important;
+    .AirmixModalEighteen__button {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+  
+      color: #ffffff;
+  
+      padding: 30px 40px;
+  
+      border: 2px solid #00b960;
+      box-sizing: border-box;
+      border-radius: 4px;
+
+      cursor: pointer;
+
+      @media screen and(max-width: 576px) {
+        padding: 20px 30px;
+      }
+    }
+  }
+
+  .hvr-sweep-to-right:before {
+    background-color: #00b960 !important;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 0.2;
+  }
+
+  .hvr-sweep-to-right {
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
+
+
+  .AirmixModalEighteen__window {
+    width: 420px;
+    height: 335px;
+
+    background: #1e212b;
+    box-shadow: 0px 5px 13px rgba(5, 38, 61, 0.05);
+    border-radius: 4px;
+  }
+
+  .AirmixModalEighteen__closeCont {
+    img {
+      position: absolute;
+      margin-left: -24px;
+      margin-top: -24px;
+      cursor: pointer;
+    }
+  }
+
+  .AirmixModalEighteen__content {
+    height: 100%;
+    padding: 50px;
+
+    h3 {
+      font-family: 'Gilroy-SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 130%;
+      color: #ffffff;
+
+      @media screen and(max-width: 576px) {
+        font-size: 26px;
+      }
+    }
+
+    p {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 145%;
+      text-align: center;
+
+      color: #ffffff;
+    }
+
+    h6 {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 145%;
+      text-align: center;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+
+      color: #bababa;
+    }
+  }
+
+  .Contact__buttonEl {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #00b960;
+    border-radius: 3px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+      background: #019950;
+    }
+  }
+
+  @media screen and(max-width: 465px) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .AirmixModalEighteen__content {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      h6 {
+        padding-top: 20px;
+        font-size: 13px;
+      }
+    }
+  }
+}

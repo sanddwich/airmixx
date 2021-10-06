@@ -19,4 +19,15 @@
       height: 570px;
     }
   }
+
+  .AirmixProductCard__imgIphone {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 440px;
+
+    @media screen and(max-width: 420px) {
+      height: 360px;
+    }
+  }
 }

@@ -29,4 +29,7 @@ export interface ModalState {
   modalWindow: {
     isActive: boolean
   }
+  modalEighteen: {
+    isActive: boolean
+  }
 }
