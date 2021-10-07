@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import ScrollAnimation from 'react-animate-on-scroll'
 import './MainFooter.scss'
+import { Config } from '../../../Config/Config'
 
 interface MainFooterProps {}
 
@@ -13,8 +14,8 @@ class MainFooter extends React.Component<MainFooterProps, MainFooterState> {
       <Container fluid className="MainFooter p-0 m-0 d-flex align-items-center">
         <div className="MainFooter__row">
           <div className="col-md-4 mt-5 mt-md-0 align-self-center">
-            <a href="/files/politics.pdf" target="_blank">
-              Политика конфиндециальности
+            <a href={`${Config.url}politic.pdf`} target="_blank">
+              Политика конфиденциальности
             </a>
           </div>
           <div className="col-md-4 mt-5 mt-md-0  MainFooter__logo">

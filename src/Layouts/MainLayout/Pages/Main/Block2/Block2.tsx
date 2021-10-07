@@ -34,7 +34,7 @@ const Block2 = (props: Block2Props) => {
                 <div className="Block2__qblock1">
                   <ToggleMessageEl isOpen={true}>
                     <h4>Гипоаллергенный мундштук</h4>
-                    <p>растительный глицерин , никотин 2% , пищевой пропиленгликоль и натуральные ароматизаторы</p>
+                    <p>из пищевого пластика, изготовленный специально для Airmix</p>
                   </ToggleMessageEl>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Block2 = (props: Block2Props) => {
                   <ScrollAnimation animateOnce={true} offset={0} animateIn="animate__fadeIn" delay={1300}>
                     <ToggleMessageEl isOpen={false}>
                       <h4>Подача воздуха</h4>
-                      <p>Светодионый индикатор подачи воздуха в устройство</p>
+                      <p>Светодиодный индикатор подачи воздуха в устройство</p>
                     </ToggleMessageEl>
                   </ScrollAnimation>
                 </div>

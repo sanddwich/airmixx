@@ -128,8 +128,8 @@ const AirmixRequest = (props: AirmixRequestProps) => {
           </div>
 
           <h6>
-            Оставляя заявку, вы соглашаетесь{' '}
-            <a href={`${Config.url}/polotic.pdf`} target="_blank">
+            Оставляя заявку, вы соглашаетесь c{' '}
+            <a href={`${Config.url}/politic.pdf`} target="_blank">
               политикой конфиденциальности
             </a>
           </h6>

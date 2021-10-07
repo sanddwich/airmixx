@@ -109,7 +109,7 @@ const Contacts = (props: ContactsProps) => {
                   </Row>
                   <p className="pt-3">
                     Оставляя заявку, вы соглашаетесь с{' '}
-                    <a href={`${Config.url}/polotic.pdf`} target="_blank">
+                    <a href={`${Config.url}/politic.pdf`} target="_blank">
                       политикой конфиденциальности
                     </a>
                   </p>
