@@ -18,14 +18,14 @@ const Block4 = (props: Block4Props) => {
         <Container className="Block4__Cont" style={{ backgroundImage: 'url("/img/4-1.jpg")' }}>
           <Row className="Block4__halfHeader d-flex justify-content-center m-0">
             <Col lg={8} xs={12} className="p-0">
-              <h1>Выгодные предложения для оптовиков</h1>
+              <h1>Вас заинтересовала продукция?</h1>
             </Col>
           </Row>
 
           <Row className="Block4__Row m-0 align-items-center">
             <Col lg={6} className="Block4__ColContent">
               <ScrollAnimation animateOnce={true} offset={100} animateIn="animate__fadeInLeft">
-                <div className="Block4__titleDiv d-flex align-items-center">
+                {/* <div className="Block4__titleDiv d-flex align-items-center">
                   <div className="Block4__titleImg">
                     <img src="/img/svg/4-1.svg" alt="" />
                   </div>
@@ -35,11 +35,15 @@ const Block4 = (props: Block4Props) => {
                   <AirmixSticker width={225}>от 150 штук – 330 рублей</AirmixSticker>
                   <AirmixSticker width={225}>от 500 штук – 300 рублей</AirmixSticker>
                   <AirmixSticker width={225}>от 1 500 штук – 280 рублей</AirmixSticker>
+                </Row> */}
+
+                <Row className="Block4__titleText m-0">
+                  Хотите стать эксклюзивным дистрибьютором Airmix в своём регионе?
                 </Row>
               </ScrollAnimation>
 
               <ScrollAnimation animateOnce={true} offset={100} animateIn="animate__fadeInLeft">
-                <div className="Block4__titleDiv d-flex align-items-center">
+                {/* <div className="Block4__titleDiv d-flex align-items-center">
                   <div className="Block4__titleImg">
                     <img src="/img/svg/4-2.svg" alt="" />
                   </div>
@@ -49,6 +53,10 @@ const Block4 = (props: Block4Props) => {
                   <AirmixSticker width={480}>
                     Чтобы получить дилерскую эксклюзивную цену, свяжитесь с нами
                   </AirmixSticker>
+                </Row> */}
+
+                <Row className="Block4__titleText2 m-0" style={{ fontWeight: 'normal' }}>
+                  Оставьте заявку и с Вами свяжется менеджер
                 </Row>
               </ScrollAnimation>
 

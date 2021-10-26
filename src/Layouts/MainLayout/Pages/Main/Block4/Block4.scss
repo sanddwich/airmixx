@@ -33,6 +33,20 @@
       font-size: 18px;
     }
   }
+  
+  .Block4__titleText2 {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 145%;
+    color: #303030;
+    padding-top: 20px;
+
+    @media screen and(max-width: 576px) {
+      font-size: 18px;
+    }
+  }
 
   .Block4__titleDiv {
     padding-bottom: 40px;
@@ -98,7 +112,7 @@
 
     color: #ffffff;
 
-    margin-top: -30px;
+    margin-top: 30px;
 
     transition: all ease-in-out .5s;
     &:hover {

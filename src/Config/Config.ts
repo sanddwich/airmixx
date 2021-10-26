@@ -42,8 +42,8 @@ export const Config: ConfigInterface = {
 
   socialLinks: [
     {name: 'whatsapp', url: 'https://api.whatsapp.com/send?phone=+79608586777'},
-    {name: 'telegram', url: 'https://t.me/+79299250008'},
-    {name: 'insta', url: 'https://www.instagram.com/airmix_pods/'},
+    {name: 'telegram', url: 'https://t.me/Airmix_pods'},
+    {name: 'insta', url: 'https://www.instagram.com/airmix_pods_/'},
   ],
 
   mailSettings: {
